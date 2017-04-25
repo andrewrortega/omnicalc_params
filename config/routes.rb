@@ -7,14 +7,11 @@ Rails.application.routes.draw do
 
   # flexible payment
   get("/flexible/payment/:num_1/:num_2/:num_3", {:controller => "calculations", :action => "flex_payment_num"})
+
   # flexible random number
   get("/flexible/random/:num_1/:num_2", {:controller => "calculations", :action => "flex_random_num"})
 
-
-
-
-
-
+  # flexible square with form
   get("/square/new", {:controller => "calculations", :action => "square_form"})
   get("/square/results", {:controller => "calculations", :action => "square"})
 end

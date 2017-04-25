@@ -32,19 +32,7 @@ class CalculationsController < ApplicationController
     render("calculations/random_num.html.erb")
   end
 
-
-
-
-
-
-
-
-  def flex_square_root_num
-    @user_number = params["num"].to_f
-    @square_root = @user_number**0.5
-    render("calculations/flex_square_root_5.html.erb")
-  end
-
+  # flexible square with form
   def square_form
     render("calculations/square_form.html.erb")
   end
@@ -56,3 +44,36 @@ class CalculationsController < ApplicationController
   end
 
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def flex_square_root_num
+#   @user_number = params["num"].to_f
+#   @square_root = @user_number**0.5
+#   render("calculations/flex_square_root_5.html.erb")
+# end
