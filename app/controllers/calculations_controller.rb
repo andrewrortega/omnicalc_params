@@ -80,6 +80,7 @@ class CalculationsController < ApplicationController
     @min=params[:user_number_1].to_f.round(1)
     @max=params[:user_number_2].to_f.round(1)
     @random_num=rand(@min..@max).round(4)
+
     render("calculations/random.html.erb")
   end
 end

@@ -26,4 +26,5 @@ Rails.application.routes.draw do
   # flexible random number with form
   get("/random/new", {:controller => "calculations", :action => "random_form"})
   get("/random/results", {:controller => "calculations", :action => "random"})
+  
 end
