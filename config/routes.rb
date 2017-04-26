@@ -18,4 +18,12 @@ Rails.application.routes.draw do
   # flexible square root with form
   get("/square_root/new", {:controller => "calculations", :action => "square_root_form"})
   get("/square_root/results", {:controller => "calculations", :action => "square_root"})
+
+  # flexible payment with form
+  get("/payment/new", {:controller => "calculations", :action => "payment_form"})
+  get("/payment/results", {:controller => "calculations", :action => "payment"})
+
+  # flexible random number with form
+  get("/random/new", {:controller => "calculations", :action => "random_form"})
+  get("/random/results", {:controller => "calculations", :action => "random"})
 end
